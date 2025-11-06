@@ -1,0 +1,36 @@
+project_id = "tpippwschmbgxwihgxmo"
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = []
+jwt_expiry = 3600
+enable_confirmations = false
+enable_signup = true
+enable_anonymous_sign_ins = false
+minimum_password_length = 6
+password_requirements = ""
+
+[auth.third_party.saml]
+enabled = false
+
+[auth.third_party]
+enabled = false
+
+[auth.external.apple]
+enabled = false
+
+[auth.external.google]
+enabled = false
+
+[functions]
+enabled = true
+
+[functions.analyze-player]
+verify_jwt = true
+
+[functions.sports-predictions]
+verify_jwt = true
+
+[functions.send-player-advice]
+verify_jwt = true
